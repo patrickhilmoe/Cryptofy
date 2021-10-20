@@ -1,12 +1,15 @@
 $color-primary: #3046C5;
 $color-secondary: #5637dd;
 $color-pale: #CEC8FF;
-$color-mid: #901CAD;
+$color-mid: #3a668f;
 $color-dark: #60106b;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 
 $body-font: "Open Sans", sans-serif;
-$header-font: "Lobster", cursive;
+$header-font: "Constantia", sans-serif;
+
+$border-corners-top: 1em;
+$border-corners-bottom: .5em;
 
 body {
     font-family: $body-font;
@@ -68,4 +71,36 @@ header {
     bottom: 0;
     /* z-index: 100; makes buttons overlay on top of each other */
     z-index: 100;
+}
+
+.card-content{
+    border-radius: $border-corners-top;
+}
+
+.card-header{
+    border-bottom-right-radius: $border-corners-bottom;
+    border-bottom-left-radius: $border-corners-bottom;
+    text-align: center;
+}
+
+.navbar-nav{
+    li{
+        padding: 0 10px;
+    }
+}
+
+.nav-item{
+    margin: auto;
+}
+
+.login-spacing{
+    margin: 0 15px;
+}
+
+.home-icon{
+    margin: 0 45px 0 25px;
+}
+
+.separator{
+    margin: 10em 0;
 }
