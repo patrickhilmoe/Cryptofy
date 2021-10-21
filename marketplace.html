@@ -1,12 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cryptofy</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Cryptofy: Neftify Your Art</title>
 </head>
+
 <body>
-    <p>Hello world</p>
+    <!-- <header>
+        <div>
+            <h1>Cryptofy</h1>
+            <h2>Neftify Your Art</h2>
+        </div>
+    </header> -->
+    <!-- Left side container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <h4 id="filter">Filter</h4>
+                <div class="accordion accordion-flush" id="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="status-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#status-collapse" aria-expanded="false">
+                                Status
+                            </button>
+                        </h2>
+                        <div id="status-collapse" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <div class="d-grid gap-2 d-sm-grid mb-2">
+                                    <button class="btn btn-outline-dark" type="button">Buy Now</button>
+                                    <button class="btn btn-outline-dark" type="button">On Auction</button>
+                                </div>
+                                <div class="d-grid gap-2 d-sm-grid">
+                                    <button class="btn btn-outline-dark" type="button">New</button>
+                                    <button class="btn btn-outline-dark" type="button">Offers</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="price-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#price-collapse" aria-expanded="false">
+                                Price
+                            </button>
+                        </h2>
+                        <div id="price-collapse" class="accordion-collapse collapse" data-bs-parent="#accordian">
+                            <div class="accordion-body">
+                                <div class="d-grid gap-2 d-sm-grid">
+                                    <button class="btn btn-outline-dark text-center" type="button">United States
+                                        Dollar(USD)</button>
+                                    <button class="btn btn-outline-dark text-center" type="button">Ether(ETH)</button>
+                                </div>
+                            </div>
+                            <div class="sort-by-price">
+                                <h5></h5>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Min">
+                                    <span class="input-group-text">To</span>
+                                    <input type="text" class="form-control" placeholder="Max">
+                                </div>
+                                <button class="btn btn-outline-dark text-center" type="button">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="collection-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collection-collapse" aria-expanded="false">
+                                Collection
+                            </button>
+                        </h2>
+                        <div id="collection-collapse" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <div class="mb-3"> 
+                                    <input type="search" class="form-control" id="search" placeholder="Filter by name">                                               
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="chain-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#chain-collapse" aria-expanded="false">
+                                Chains
+                            </button>
+                        </h2>
+                        <div id="chain-collapse" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="onsale-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#onsale-collapse" aria-expanded="false">
+                                On Sale
+                            </button>
+                        </h2>
+                        <div id="onsale-collapse" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="categories-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#categories-collapse" aria-expanded="false">
+                                Categories
+                            </button>
+                        </h2>
+                        <div id="categories-collapse" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Art</li>
+                                    <li class="list-group-item">Music</li>
+                                    <li class="list-group-item">Sports</li>
+                                    <li class="list-group-item">Collectables</li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some random dude</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-light">Buy Now</button>
+                                <span style=" color: Dodgerblue;">
+                                    <i class="far fa-heart float-end mt-2">25</i></span>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Painting</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-light">Buy Now</button>
+                                <span style=" color: Dodgerblue;">
+                                    <i class="far fa-heart float-end mt-2">20</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/3.gif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Cat gif</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-light">Buy Now</button>
+                                <span class="far fa-heart float-end mt-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/4.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Beautiful women</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-light">Buy Now</button>
+                                <span class="far fa-heart float-end mt-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Another Random dude</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-light">Buy Now</button>
+                                <span class="far fa-heart float-end mt-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/6.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">And another one</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-light">Buy Now</button>
+                                <span class="far fa-heart float-end mt-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

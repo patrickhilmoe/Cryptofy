@@ -20,5 +20,11 @@
   "homepage": "https://github.com/patrickhilmoe/Cryptofy#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
