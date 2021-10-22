@@ -46,6 +46,12 @@ header h2 {
   /* z-index: 100; makes buttons overlay on top of each other */
   z-index: 100; }
 
+.card:hover {
+  box-shadow: 2px 4px 4px; }
+
+.btn:hover {
+  box-shadow: 2px 4px 4px; }
+
 .card-content {
   border-radius: 1em; }
 
