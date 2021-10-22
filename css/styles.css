@@ -1,15 +1,13 @@
-body{
-    width: 100%;
-}
+
 
 .container{
-    margin-left: 0;  
+    float: left;
 }
-/* #filter{
-    text-align: center;
+/* .py-5{
+    margin-left: 15px;
+    margin-right: 0;
 } */
-#buy-now-button{
-    /* display:none; */
+#card-list{
+    margin-bottom: 5px;
 }
-
   
