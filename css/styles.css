@@ -3,10 +3,10 @@
 .container{
     float: left;
 }
-/* .py-5{
+.py-5{
     margin-left: 15px;
     margin-right: 0;
-} */
+}
 #card-list{
     margin-bottom: 5px;
 }
